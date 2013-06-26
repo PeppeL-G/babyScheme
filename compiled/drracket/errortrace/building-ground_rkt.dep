@@ -1,0 +1,1 @@
+("5.3.4" ("ca69cc53f911423ba7d89b4d643ad8b213da302c" . "27dae4c4b90cd949bc038c07bb2b227768171827") (collects #"racket" #"main.rkt") #"/home/peter/babyScheme/component.rkt" (collects #"racket" #"lang" #"reader.rkt"))

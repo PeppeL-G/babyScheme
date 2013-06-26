@@ -1,0 +1,1 @@
+("5.3.4" ("a71481eaddeb7c8beb3731741b19b6d462dcd559" . "ce1e19d6cdb17517a79265189e2510458ee40b10") (collects #"racket" #"main.rkt") #"/home/peter/babyScheme/building-blocks-field.rkt" #"/home/peter/babyScheme/component.rkt" #"/home/peter/babyScheme/building-ground.rkt" (collects #"racket" #"lang" #"reader.rkt"))

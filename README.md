@@ -22,32 +22,49 @@ The bulding blocks
 ==================
 The building blocks available will (hopefully) be:
 
-Special forms:
+Special forms
+-------------
  if-expression: (if condition consequense alternative)
  function definition: (define (function-name) body-expression)
  function definition: (define (function-name para1) body-expression)
  function definition: (define (function-name para1 para2) body-expression)
  function definition: (define (function-name para1 para2 para3) body-expression)
 
-Ordinary function calls:
+Ordinary function calls
+-----------------------
  Mathematical functions:
   Addition: (+ term1 term2)
   Subtraction: (- minuend subtrahend)
-  ...
+  Multiplication: (* factor1 factor2)
+  Division: (/ dividend divisior)
+  
+  Equality: (= number1 number2)
+  Less than: (< number1 number2)
+  Greater than: (> number1 number2)
+  
+  Random: (random exclusive-max)
+  
   
  List functions:
   Create empty list: (list)
   Insert element first: (cons element list)
   Get first element in list: (first list)
   Get rest of elements in list: (rest list)
-  ...
+ 
+ 
+ Logical functions:
+  not
+  and
+  or
 
 Variables (parameters)
+----------------------
 
-Atomic expressions:
+Atomic expressions
+------------------
  #true
  #false
- Numbers
+ Number
 
 Regarding the four different function definitions: one could instead use one
 building block that would accept an arbitrary number of parameters, but since
@@ -57,4 +74,26 @@ be easier to learn the program this way (but we'll see!).
 Diverse
 =======
 The condition in an if-expression must be an expression resulting in #true or #false
-(unlike sceheme).
+(unlike ordinary sceheme).
+
+Other ideas
+===========
+Support as few functions as possible, and let the programmers implement the more
+complicated ones, for example skip multiplication and let the programmers
+implement it by using addition, or skipping all logical functions and let the
+programmer implement it using if-expressions.
+
+Suitable functions to implement for the programmers
+===================================================
+Pure math
+---------
+(max number1 number2)
+(min number1 number2)
+(faculty n)
+(sum n)
+(random-from-to min max)
+
+Also lists
+----------
+(random-list min max number-of-elements)
+(length list)
